@@ -3186,6 +3186,7 @@ input, select, textarea {
 				padding: 2.25em 1.5em;
 				margin-left: auto; /* Centers the block horizontally */
     			margin-right: auto;
+				position: relative;
 			}
 
 				#header h1 {
@@ -3232,6 +3233,7 @@ input, select, textarea {
 				padding: 4.5em 1.5em;
 				margin-left: auto; /* Centers the block horizontally */
     			margin-right: auto;
+				position: relative;
 			}
 
 				#header h1 br {
