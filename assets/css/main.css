@@ -2579,7 +2579,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: block;
+		display: flex;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -2635,7 +2635,7 @@ input, select, textarea {
 				0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 				0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			/* Ensure the box only takes up the necessary width */
-			display: inline-block;
+			display: block;
 		}
 
 		#header strong, #header b {
