@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3020,7 +3021,7 @@ input, select, textarea {
 				}
 
 					#header h1 br {
-						display: none;
+						display: block;
 					}
 
 				#header > .inner {
@@ -3055,7 +3056,7 @@ input, select, textarea {
 		/* Basic */
 
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none;
+				display: block;
 			}
 
 		/* List */
@@ -3084,7 +3085,7 @@ input, select, textarea {
 				}
 
 					#header h1 br {
-						display: inline;
+						display: block;
 					}
 
 		/* Footer */
@@ -3219,7 +3220,7 @@ input, select, textarea {
 			}
 
 				#header h1 br {
-					display: none;
+					display: block;
 				}
 
 		/* Footer */
