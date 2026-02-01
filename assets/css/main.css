@@ -3139,6 +3139,7 @@ input, select, textarea {
 
 			h1 {
 				font-size: 1.5em;
+				
 			}
 
 			h2 {
@@ -3173,6 +3174,7 @@ input, select, textarea {
 
 			#header {
 				padding: 2.25em 1.5em;
+				display: block;
 			}
 
 				#header h1 {
@@ -3217,6 +3219,7 @@ input, select, textarea {
 
 			#header {
 				padding: 4.5em 1.5em;
+				display: block;
 			}
 
 				#header h1 br {
