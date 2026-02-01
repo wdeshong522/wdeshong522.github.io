@@ -3184,6 +3184,8 @@ input, select, textarea {
 
 			#header {
 				padding: 2.25em 1.5em;
+				margin-left: auto; /* Centers the block horizontally */
+    			margin-right: auto;
 			}
 
 				#header h1 {
@@ -3228,6 +3230,8 @@ input, select, textarea {
 
 			#header {
 				padding: 4.5em 1.5em;
+				margin-left: auto; /* Centers the block horizontally */
+    			margin-right: auto;
 			}
 
 				#header h1 br {
