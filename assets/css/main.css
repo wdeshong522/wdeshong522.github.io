@@ -23,8 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-}
+	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2622,6 +2621,17 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
+			/* Add a background color so the text is readable */
+			background-color: #0000009e; 
+			/* Add some padding for space around the text inside the box */
+			padding: 10px;
+			/* Apply the shadow */
+			box-shadow: 
+				/* h-offset, v-offset, blur-radius, spread-radius, color */
+				0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			/* Ensure the box only takes up the necessary width */
+			display: inline-block;
 		}
 
 		#header > .shaded-text-container {
@@ -2635,7 +2645,7 @@ input, select, textarea {
 				0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 				0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			/* Ensure the box only takes up the necessary width */
-			display: block;
+			display: inline-block;
 		}
 
 		#header strong, #header b {
@@ -3021,7 +3031,7 @@ input, select, textarea {
 				}
 
 					#header h1 br {
-						display: block;
+						display: none;
 					}
 
 				#header > .inner {
@@ -3056,7 +3066,7 @@ input, select, textarea {
 		/* Basic */
 
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: block;
+				display: none;
 			}
 
 		/* List */
@@ -3085,7 +3095,7 @@ input, select, textarea {
 				}
 
 					#header h1 br {
-						display: block;
+						display: inline;
 					}
 
 		/* Footer */
@@ -3139,7 +3149,6 @@ input, select, textarea {
 
 			h1 {
 				font-size: 1.5em;
-				
 			}
 
 			h2 {
@@ -3174,7 +3183,6 @@ input, select, textarea {
 
 			#header {
 				padding: 2.25em 1.5em;
-				display: block;
 			}
 
 				#header h1 {
@@ -3219,11 +3227,10 @@ input, select, textarea {
 
 			#header {
 				padding: 4.5em 1.5em;
-				display: block;
 			}
 
 				#header h1 br {
-					display: block;
+					display: none;
 				}
 
 		/* Footer */
