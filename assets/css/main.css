@@ -2620,7 +2620,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
-			margin: 0 0 2em 0;
+			/*margin: 0 0 2em 0;*/
 			/* Add a background color so the text is readable */
 			background-color: #0000009e; 
 			/* Add some padding for space around the text inside the box */
