@@ -3031,7 +3031,7 @@ input, select, textarea {
 				}
 
 					#header h1 br {
-						display: none;
+						display: block;
 					}
 
 				#header > .inner {
@@ -3066,7 +3066,7 @@ input, select, textarea {
 		/* Basic */
 
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none;
+				display: block;
 			}
 
 		/* List */
@@ -3095,7 +3095,7 @@ input, select, textarea {
 				}
 
 					#header h1 br {
-						display: inline;
+						display: block;
 					}
 
 		/* Footer */
@@ -3230,7 +3230,7 @@ input, select, textarea {
 			}
 
 				#header h1 br {
-					display: none;
+					display: block;
 				}
 
 		/* Footer */
