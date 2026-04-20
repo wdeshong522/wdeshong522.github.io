@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Adapted for Will DeShong Portfolio - Virtuall Project Page
+-->
+<html>
+	<head>
+		<title>Virtuall | Will DeShong</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.video-hero {
+				position: relative;
+				width: 100%;
+				background: #1a1a1a;
+				border-radius: 6px;
+				overflow: hidden;
+				margin-bottom: 2em;
+				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+			}
+			.video-hero video {
+				width: 100%;
+				display: block;
+				max-height: 480px;
+				object-fit: contain;
+				background: #000;
+			}
+			.video-hero .video-caption {
+				padding: 0.7em 1em;
+				font-size: 0.85em;
+				color: #999;
+				background: #111;
+				text-align: center;
+				letter-spacing: 0.04em;
+			}
+
+			.project-meta {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1.2em;
+				margin-bottom: 2.2em;
+				padding: 1.2em 1.4em;
+				background: #f8f8f8;
+				border-left: 4px solid #49bf9d;
+				border-radius: 0 4px 4px 0;
+			}
+			.project-meta .meta-item {
+				display: flex;
+				flex-direction: column;
+				gap: 0.2em;
+			}
+			.project-meta .meta-label {
+				font-size: 0.7em;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				color: #aaa;
+				font-weight: 700;
+			}
+			.project-meta .meta-value {
+				font-size: 0.9em;
+				color: #444;
+				font-weight: 600;
+			}
+
+			.project-section {
+				margin-bottom: 2.4em;
+			}
+			.project-section h3 {
+				font-size: 1em;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+				color: #49bf9d;
+				border-bottom: 1px solid #e8e8e8;
+				padding-bottom: 0.5em;
+				margin-bottom: 1em;
+			}
+
+			.feature-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.feature-list li {
+				padding: 0.5em 0 0.5em 1.4em;
+				border-bottom: 1px solid #f0f0f0;
+				position: relative;
+				font-size: 0.92em;
+				color: #555;
+			}
+			.feature-list li:last-child { border-bottom: none; }
+			.feature-list li::before {
+				content: '›';
+				position: absolute;
+				left: 0;
+				color: #49bf9d;
+				font-weight: 700;
+				font-size: 1.1em;
+			}
+
+			.two-col {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1.5em;
+				margin-top: 1.2em;
+			}
+			@media (max-width: 736px) {
+				.two-col { grid-template-columns: 1fr; }
+			}
+			.col-card {
+				background: #f8f8f8;
+				border-radius: 4px;
+				padding: 1.1em 1.2em;
+			}
+			.col-card h4 {
+				font-size: 0.85em;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				color: #49bf9d;
+				margin: 0 0 0.7em 0;
+			}
+
+			.cta-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1em;
+				margin-top: 1em;
+			}
+
+			.breadcrumb {
+				font-size: 0.82em;
+				color: #aaa;
+				margin-bottom: 1.8em;
+				display: flex;
+				align-items: center;
+				gap: 0.4em;
+			}
+			.breadcrumb a {
+				color: #49bf9d;
+				text-decoration: none;
+				border-bottom: none;
+			}
+			.breadcrumb a:hover { color: #3ca882; }
+			.breadcrumb .sep { color: #ccc; }
+
+			.screenshot-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+				gap: 1em;
+				margin-top: 0.8em;
+			}
+			.screenshot-item {
+				background: #f0f0f0;
+				border-radius: 4px;
+				aspect-ratio: 16/10;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				border: 1px solid #e4e4e4;
+			}
+			.screenshot-item img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+			.screenshot-placeholder {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.4em;
+				color: #ccc;
+				font-size: 0.78em;
+			}
+			.screenshot-placeholder svg {
+				width: 32px;
+				height: 32px;
+				stroke: #ddd;
+				fill: none;
+				stroke-width: 1.5;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a class="image avatar"><img src="images/will_prof_pic.jpg" alt="" /></a>
+				<h1><strong>Will DeShong</strong> <br />
+					First year PhD student <br />
+					Modeling and Simulation <br />
+					Old Dominion University</h1>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<nav class="breadcrumb">
+				<a href="index.html">Home</a>
+				<span class="sep">›</span>
+				<span>Virtuall</span>
+			</nav>
+
+			<!-- Title + Meta -->
+			<section id="project-header">
+				<header class="major">
+					<h2>Virtuall: Virtual Haptic White Cane Training</h2>
+				</header>
+				<div class="project-meta">
+					<div class="meta-item">
+						<span class="meta-label">Role</span>
+						<span class="meta-value">Researcher &amp; Developer</span>
+					</div>
+					<div class="meta-item">
+						<span class="meta-label">Course</span>
+						<span class="meta-value">CS 832 — Old Dominion University</span>
+					</div>
+					<div class="meta-item">
+						<span class="meta-label">Domain</span>
+						<span class="meta-value">Virtual Reality · Accessibility</span>
+					</div>
+					<div class="meta-item">
+						<span class="meta-label">Audience</span>
+						<span class="meta-value">O&amp;M &amp; TVI Specialists</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Video -->
+			<section class="project-section">
+				<h3>Demo Video</h3>
+				<div class="video-hero">
+					<video controls preload="metadata">
+						<source src="videos/VIRTUALL_demo.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+					<div class="video-caption">Virtuall — Virtual Haptic White Cane Prototype Demo</div>
+				</div>
+			</section>
+
+			<!-- Overview -->
+			<section class="project-section">
+				<h3>Project Overview</h3>
+				<p>
+					VIRTUALL (Visually Impaired Research and Training Universal Accessibility Learning Lab) is a virtual reality application that enables students who are visually impaired to learn white cane navigation skills remotely under the guidance of an Orientation and Mobility (O&amp;M) specialist or Teacher of the Visually Impaired (TVI). Students progress through increasingly challenging virtual environments, building the skills needed to confidently use a white cane in the real world.
+				</p>
+				<p>
+					The platform addresses a significant gap in accessibility training — limited access to O&amp;M specialists and the difficulty of practicing across diverse real-world environments. The haptic white cane hardware connects via Bluetooth and is designed to feel and behave like an actual white cane, enabling a seamless transfer of skills from the virtual training environment to real-life navigation.
+				</p>
+			</section>
+
+			<!-- Interface Design -->
+			<section class="project-section">
+				<h3>Interface Design</h3>
+				<p>The instructor-facing interface was designed with accessibility as a core principle, featuring a screen reader toggle on every page. The wireframe covers four primary areas of the application:</p>
+
+				<div class="two-col">
+					<div class="col-card">
+						<h4>Landing Page</h4>
+						<ul class="feature-list">
+							<li>Create a new account or log in with existing credentials</li>
+							<li>Screen reader toggle switch for accessibility needs</li>
+							<li>Links to learn about the haptic white cane and available training environments</li>
+							<li>Option to request additional information or support</li>
+						</ul>
+					</div>
+					<div class="col-card">
+						<h4>Instructor Portal</h4>
+						<ul class="feature-list">
+							<li>Slide-through view of all enrolled students with photo, notes, and progress stats</li>
+							<li>Editable student profiles including cane type and session notes</li>
+							<li>Progress tracking across six skill areas: basic navigation, obstacle identification, obstacle avoidance, complex navigation, crosswalk, and stairs</li>
+							<li>Add existing students via join code or email; invite new students by name and email</li>
+						</ul>
+					</div>
+					<div class="col-card">
+						<h4>Learning Session</h4>
+						<ul class="feature-list">
+							<li>Live video feed of the student's avatar in the VR training environment</li>
+							<li>Real-time session statistics: training time, obstacles hit, scenarios completed, and mastery %</li>
+							<li>Notes panel for the instructor to log observations during the session</li>
+							<li>Mute/unmute and end session controls; returns to instructor portal on session end</li>
+						</ul>
+					</div>
+					<div class="col-card">
+						<h4>Training Environments</h4>
+						<ul class="feature-list">
+							<li>Progressive scenarios from no prior experience to independent navigation</li>
+							<li>Environments include figure-eight patterns, obstacle courses, crosswalks, and stairways</li>
+							<li>Designed for a seamless transition from virtual practice to real-world white cane use</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			
+			<!-- Screenshots -->
+			<!--	
+			<section class="project-section">
+				<h3>Screenshots</h3>
+				<div class="screenshot-grid">
+					<div class="screenshot-item">
+						<div class="screenshot-placeholder">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<rect x="3" y="3" width="18" height="18" rx="2"/>
+								<circle cx="8.5" cy="8.5" r="1.5"/>
+								<polyline points="21 15 16 10 5 21"/>
+							</svg>
+							<span>Screenshot 1</span>
+						</div>
+					</div>
+					<div class="screenshot-item">
+						<div class="screenshot-placeholder">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<rect x="3" y="3" width="18" height="18" rx="2"/>
+								<circle cx="8.5" cy="8.5" r="1.5"/>
+								<polyline points="21 15 16 10 5 21"/>
+							</svg>
+							<span>Screenshot 2</span>
+						</div>
+					</div>
+					<div class="screenshot-item">
+						<div class="screenshot-placeholder">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<rect x="3" y="3" width="18" height="18" rx="2"/>
+								<circle cx="8.5" cy="8.5" r="1.5"/>
+								<polyline points="21 15 16 10 5 21"/>
+							</svg>
+							<span>Screenshot 3</span>
+						</div>
+					</div>
+				</div>
+				<p style="font-size:0.82em; color:#aaa; margin-top:0.8em;">
+					Replace placeholder slots with your actual screenshots by swapping in <code>&lt;img&gt;</code> tags.
+				</p>
+			</section>
+		-->
+
+			<!-- Links -->
+			<section class="project-section">
+				<h3>Links &amp; Documents</h3>
+				<div class="cta-row">
+					<a href="prototype/fullscreen.html" target="_blank" class="button primary">View Interactive Prototype</a>
+					<a href="documents/virtuall_wireframe_notes.pdf" target="_blank" class="button">Wireframe Notes (PDF)</a>
+					<a href="index.html" class="button">← Back to Portfolio</a>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/wdeshong/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/wdeshong522" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:wdesh001@odu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
